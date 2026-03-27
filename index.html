@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev Roadflow</title>
+    <meta
+      name="description"
+      content="A simple, animated workflow to learn full stack web development step by step."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-blob blob-a" aria-hidden="true"></div>
+    <div class="bg-blob blob-b" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero">
+        <p class="kicker">No panic. One step at a time.</p>
+        <h1>Full Stack Web Dev Workflow</h1>
+        <p class="intro">
+          Click a card, read a tiny explanation, then copy a smart AI prompt for
+          deeper learning.
+        </p>
+      </header>
+
+      <section
+        class="cards"
+        id="workflowCards"
+        aria-label="Web development learning workflow"
+      >
+        <article class="card" data-step="1">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">1</span>
+            <span class="title">What is web and how it works</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              The web is a network of pages and apps. Your browser requests
+              data, and servers send responses.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Explain how browser, DNS, server, and HTTP work together,
+              with a beginner example.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="2">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">2</span>
+            <span class="title">Frontend vs backend</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              Frontend is what users see. Backend handles logic, data, and
+              security behind the scenes.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Compare frontend and backend with real tasks, tools, and a
+              tiny project example.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="3">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">3</span>
+            <span class="title"
+              >How frontend communicates with backend (API)</span
+            >
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              Frontend sends API requests. Backend returns JSON data so the UI
+              can update in real time.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Teach API basics with GET and POST using one simple to-do
+              app flow.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="4">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">4</span>
+            <span class="title">What is database</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              A database stores app data in an organized way so it can be
+              searched, updated, and reused.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Explain SQL vs NoSQL like I am new, and when to pick each
+              one.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="5">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">5</span>
+            <span class="title">How is database contacted</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              Backend uses drivers or ORM tools to run queries safely and return
+              results to the app.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Show how backend connects to a database, runs a query, and
+              sends result to API.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="6">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">6</span>
+            <span class="title">CRUD</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              CRUD means Create, Read, Update, Delete. Most apps are built
+              around these core actions.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Explain CRUD with API routes and SQL queries for a notes
+              app.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="7">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">7</span>
+            <span class="title">What is auth</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              Auth checks who the user is and what they can access, usually with
+              sessions or JWT tokens.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Teach authentication and authorization step by step with
+              login example.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+
+        <article class="card" data-step="8">
+          <button class="card-head" type="button" aria-expanded="false">
+            <span class="step">8</span>
+            <span class="title">UIUX and SEO</span>
+            <span class="chev" aria-hidden="true">+</span>
+          </button>
+          <div class="card-body">
+            <p>
+              UIUX helps users enjoy your product. SEO helps search engines
+              understand and rank your pages.
+            </p>
+            <p class="prompt-preview">
+              Prompt: Give beginner UIUX and SEO checklist for a small web app
+              launch.
+            </p>
+            <button class="copy-btn" type="button">Copy detailed prompt</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
