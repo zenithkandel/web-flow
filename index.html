@@ -18,47 +18,9 @@
   </head>
   <body>
     <main class="page">
-      <header class="topbar">
-        <div class="brand-wrap">
-          <span class="logo-dot" aria-hidden="true"></span>
-          <strong>Road Rabbit</strong>
-        </div>
-        <nav aria-label="Primary">
-          <a href="#">Features</a>
-          <a href="#">How It Works</a>
-          <a href="#workflowCards" class="cta-link">Get Started</a>
-        </nav>
-      </header>
-
-      <section class="hero-split" aria-label="Learning workflow intro">
-        <div class="hero-left">
-          <p class="kicker">Web Dev Learning Infrastructure</p>
-          <h1>
-            All your
-            <span>full stack</span>
-            learning in one flow.
-          </h1>
-          <p class="intro">
-            Open one card at a time. Read a short explanation. Copy a detailed
-            AI prompt when you are ready.
-          </p>
-        </div>
-
-        <aside class="hero-right" aria-label="Preview">
-          <p class="preview-title">Live Preview</p>
-          <div class="preview-item">
-            <h3>Step 1</h3>
-            <p>Understand how web requests move from browser to server.</p>
-          </div>
-          <div class="preview-item">
-            <h3>Step 3</h3>
-            <p>See how APIs move data between frontend and backend.</p>
-          </div>
-          <div class="preview-item">
-            <h3>Step 7</h3>
-            <p>Learn auth basics: login, sessions, tokens, permissions.</p>
-          </div>
-        </aside>
+      <section class="content-head" aria-label="Workflow intro">
+        <p class="kicker">Simple Full Stack Learning Workflow</p>
+        <h1>Open a card. Learn one concept. Keep moving.</h1>
       </section>
 
       <section
@@ -67,12 +29,12 @@
         aria-label="Web development learning workflow"
       >
         <article class="learn-card" data-step="1">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">01</span>
                 <h2>What is web and how it works</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -80,26 +42,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              The web is a network of pages and apps. Your browser requests
-              data, and servers send responses.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Explain how browser, DNS, server, and HTTP work together,
-              with a beginner example.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="2">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">02</span>
                 <h2>Frontend vs backend</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -107,26 +58,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              Frontend is what users see. Backend handles logic, data, and
-              security behind the scenes.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Compare frontend and backend with real tasks, tools, and a
-              tiny project example.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="3">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">03</span>
                 <h2>How frontend communicates with backend (API)</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -134,26 +74,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              Frontend sends API requests. Backend returns JSON data so the UI
-              can update in real time.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Teach API basics with GET and POST using one simple to-do
-              app flow.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="4">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">04</span>
                 <h2>What is database</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -161,26 +90,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              A database stores app data in an organized way so it can be
-              searched, updated, and reused.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Explain SQL vs NoSQL like I am new, and when to pick each
-              one.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="5">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">05</span>
                 <h2>How is database contacted</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -188,26 +106,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              Backend uses drivers or ORM tools to run queries safely and return
-              results to the app.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Show how backend connects to a database, runs a query, and
-              sends result to API.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="6">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">06</span>
                 <h2>CRUD</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -215,26 +122,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              CRUD means Create, Read, Update, Delete. Most apps are built
-              around these core actions.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Explain CRUD with API routes and SQL queries for a notes
-              app.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="7">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">07</span>
                 <h2>What is auth</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -242,26 +138,15 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              Auth checks who the user is and what they can access, usually with
-              sessions or JWT tokens.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Teach authentication and authorization step by step with
-              login example.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
 
         <article class="learn-card" data-step="8">
-          <button class="card-head" type="button" aria-expanded="false">
+          <button class="card-head" type="button" aria-haspopup="dialog">
             <div class="card-shell">
               <div class="card-face front">
                 <span class="step">08</span>
                 <h2>UIUX and SEO</h2>
-                <p>Tap to flip + expand</p>
+                <p>Tap to flip + open details</p>
               </div>
               <div class="card-face back" aria-hidden="true">
                 <span class="tiny">Quick View</span>
@@ -269,19 +154,35 @@
               </div>
             </div>
           </button>
-          <div class="card-body">
-            <p>
-              UIUX helps users enjoy your product. SEO helps search engines
-              understand and rank your pages.
-            </p>
-            <p class="prompt-preview">
-              Prompt: Give beginner UIUX and SEO checklist for a small web app
-              launch.
-            </p>
-            <button class="copy-btn" type="button">Copy detailed prompt</button>
-          </div>
         </article>
       </section>
+
+      <div class="modal" id="detailModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal="true"></div>
+        <section
+          class="modal-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <button
+            class="modal-close"
+            id="modalCloseBtn"
+            type="button"
+            aria-label="Close"
+          >
+            x
+          </button>
+          <p class="modal-step" id="modalStepLabel"></p>
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <ul id="modalPoints"></ul>
+          <p class="prompt-preview" id="modalPromptPreview"></p>
+          <button class="copy-btn" id="modalCopyBtn" type="button">
+            Copy detailed prompt
+          </button>
+        </section>
+      </div>
     </main>
 
     <script src="app.js"></script>
