@@ -6,40 +6,79 @@
     <title>Web Dev Roadflow</title>
     <meta
       name="description"
-      content="A simple, animated workflow to learn full stack web development step by step."
+      content="A simple workflow to learn full stack web development without overload."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Manrope:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-blob blob-a" aria-hidden="true"></div>
-    <div class="bg-blob blob-b" aria-hidden="true"></div>
-
     <main class="page">
-      <header class="hero">
-        <p class="kicker">No panic. One step at a time.</p>
-        <h1>Full Stack Web Dev Workflow</h1>
-        <p class="intro">
-          Click a card, read a tiny explanation, then copy a smart AI prompt for
-          deeper learning.
-        </p>
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <strong>Road Rabbit</strong>
+        </div>
+        <nav aria-label="Primary">
+          <a href="#">Features</a>
+          <a href="#">How It Works</a>
+          <a href="#workflowCards" class="cta-link">Get Started</a>
+        </nav>
       </header>
 
+      <section class="hero-split" aria-label="Learning workflow intro">
+        <div class="hero-left">
+          <p class="kicker">Web Dev Learning Infrastructure</p>
+          <h1>
+            All your
+            <span>full stack</span>
+            learning in one flow.
+          </h1>
+          <p class="intro">
+            Open one card at a time. Read a short explanation. Copy a detailed
+            AI prompt when you are ready.
+          </p>
+        </div>
+
+        <aside class="hero-right" aria-label="Preview">
+          <p class="preview-title">Live Preview</p>
+          <div class="preview-item">
+            <h3>Step 1</h3>
+            <p>Understand how web requests move from browser to server.</p>
+          </div>
+          <div class="preview-item">
+            <h3>Step 3</h3>
+            <p>See how APIs move data between frontend and backend.</p>
+          </div>
+          <div class="preview-item">
+            <h3>Step 7</h3>
+            <p>Learn auth basics: login, sessions, tokens, permissions.</p>
+          </div>
+        </aside>
+      </section>
+
       <section
-        class="cards"
+        class="learning-grid"
         id="workflowCards"
         aria-label="Web development learning workflow"
       >
-        <article class="card" data-step="1">
+        <article class="learn-card" data-step="1">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">1</span>
-            <span class="title">What is web and how it works</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">01</span>
+                <h2>What is web and how it works</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Browser asks, server answers, page renders.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -54,11 +93,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="2">
+        <article class="learn-card" data-step="2">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">2</span>
-            <span class="title">Frontend vs backend</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">02</span>
+                <h2>Frontend vs backend</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Frontend is visuals, backend is logic and data.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -73,13 +120,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="3">
+        <article class="learn-card" data-step="3">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">3</span>
-            <span class="title"
-              >How frontend communicates with backend (API)</span
-            >
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">03</span>
+                <h2>How frontend communicates with backend (API)</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Requests go out, JSON comes back.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -94,11 +147,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="4">
+        <article class="learn-card" data-step="4">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">4</span>
-            <span class="title">What is database</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">04</span>
+                <h2>What is database</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>A storage system for your app's information.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -113,11 +174,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="5">
+        <article class="learn-card" data-step="5">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">5</span>
-            <span class="title">How is database contacted</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">05</span>
+                <h2>How is database contacted</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Backend connects, queries, then returns results.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -132,11 +201,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="6">
+        <article class="learn-card" data-step="6">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">6</span>
-            <span class="title">CRUD</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">06</span>
+                <h2>CRUD</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Create, Read, Update, Delete: your app basics.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -151,11 +228,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="7">
+        <article class="learn-card" data-step="7">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">7</span>
-            <span class="title">What is auth</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">07</span>
+                <h2>What is auth</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Verify identity, then control access.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>
@@ -170,11 +255,19 @@
           </div>
         </article>
 
-        <article class="card" data-step="8">
+        <article class="learn-card" data-step="8">
           <button class="card-head" type="button" aria-expanded="false">
-            <span class="step">8</span>
-            <span class="title">UIUX and SEO</span>
-            <span class="chev" aria-hidden="true">+</span>
+            <div class="card-shell">
+              <div class="card-face front">
+                <span class="step">08</span>
+                <h2>UIUX and SEO</h2>
+                <p>Tap to flip + expand</p>
+              </div>
+              <div class="card-face back" aria-hidden="true">
+                <span class="tiny">Quick View</span>
+                <p>Build clear design and pages search engines can read.</p>
+              </div>
+            </div>
           </button>
           <div class="card-body">
             <p>

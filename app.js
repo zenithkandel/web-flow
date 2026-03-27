@@ -9,7 +9,7 @@ const detailedPrompts = {
     8: "Give me a beginner checklist for UI/UX and SEO for a small web app. Keep it practical and short. Include layout/readability basics, mobile responsiveness, performance hints, semantic HTML, metadata, and one simple audit routine."
 };
 
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".learn-card");
 
 cards.forEach((card) => {
     const head = card.querySelector(".card-head");
@@ -19,6 +19,7 @@ cards.forEach((card) => {
     head.addEventListener("click", () => {
         const isOpen = card.classList.contains("open");
         cards.forEach((item) => {
+            if (item === card) return;
             item.classList.remove("open");
             item.querySelector(".card-head")?.setAttribute("aria-expanded", "false");
         });
